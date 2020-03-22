@@ -1,0 +1,17 @@
+{
+  "name": "Zoom Redirector",
+  "version": "1.0",
+  "description": "Zoom Redirector transparently redirects any meeting links to use Zoom's browser based web client.",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://*.zoom.us/j/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "manifest_version": 2
+}
