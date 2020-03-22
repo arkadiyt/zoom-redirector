@@ -14,7 +14,7 @@ chrome.webRequest.onBeforeRequest.addListener(function(details) {
   // Save a round trip if the user requested a non-https url
   // At time of writing, Zoom has non-preloaded HSTS deployed
   url.protocol = 'https:';
-  url.pathname = '/wc/join/' + encodeURIComponent(match[1]);
+  url.pathname = '/wc/' + encodeURIComponent(match[1]) + '/join';
   return {
     redirectUrl: url.href
   }
