@@ -1,7 +1,12 @@
 {
-  "name": "Zoom Redirector",
+  "name": "__MSG_appName__",
   "version": "1.0",
-  "description": "Zoom Redirector transparently redirects any meeting links to use Zoom's browser based web client.",
+  "description": "__MSG_appDesc__",
+  "default_locale": "en",
+  "icons": {
+    "48": "img/icon-48x48.png",
+    "128": "img/icon-128x128.png"
+  },
   "permissions": [
     "webRequest",
     "webRequestBlocking",

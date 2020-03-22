@@ -12,7 +12,7 @@ Zoom Redirector transparently redirects any meeting links to use Zoom's browser 
 
 ### Installation
 
-- Chrome: https://chrome.google.com/webstore/detail/zoom-redirector/loecngenhbofidbaegdmmencehmaoncp
+- Chrome: https://chrome.google.com/webstore/detail/zoom-redirector/fmaeeiocbalinknpdkjjfogehkdcbkcd
 - Firefox: https://addons.mozilla.org/en-US/firefox/addon/zoom-redirector/
 - Opera: submission pending
 - Edge: submission pending
