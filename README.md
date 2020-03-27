@@ -1,4 +1,4 @@
-# zoom_redirector
+# zoom-redirector
 
 ## Table of Contents
 - [What's it for](https://github.com/arkadiyt/zoom-redirector#whats-it-for)
