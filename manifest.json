@@ -10,7 +10,7 @@
   "permissions": [
     "webRequest",
     "webRequestBlocking",
-    "*://*.zoom.us/j/*"
+    "*://*.zoom.us/*"
   ],
   "background": {
     "scripts": [
