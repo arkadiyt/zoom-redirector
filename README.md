@@ -14,8 +14,8 @@ When joining a Zoom meeting, the "join from your browser" link is intentionally 
 
 - Chrome: https://chrome.google.com/webstore/detail/zoom-redirector/fmaeeiocbalinknpdkjjfogehkdcbkcd
 - Firefox: https://addons.mozilla.org/en-US/firefox/addon/zoom-redirector/
+- Edge: https://microsoftedge.microsoft.com/addons/detail/dkhjempaiackknhjkkaidppoepkdamen
 - Opera: submission pending
-- Edge: submission pending
 
 ### Changelog
 
