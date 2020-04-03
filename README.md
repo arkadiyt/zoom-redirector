@@ -6,6 +6,8 @@
 - [Changelog](https://github.com/arkadiyt/zoom-redirector#changelog)
 - [Getting in touch](https://github.com/arkadiyt/zoom-redirector#getting-in-touch)
 
+# **4/3/2020 NOTE: Zoom has disabled their web client.** See [this issue](https://github.com/arkadiyt/zoom-redirector/issues/7) for details.
+
 ### What's it for
 
 When joining a Zoom meeting, the "join from your browser" link is intentionally hidden. This browser extension solves this problem by transparently redirecting any meeting links to use Zoom's browser based web client.
