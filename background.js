@@ -21,4 +21,4 @@ chrome.webRequest.onBeforeRequest.addListener(function(details) {
   return {
     redirectUrl: url.href
   };
-}, { urls: ['*://*.zoom.us/j/*', '*://*.zoom.us/s/*'] }, ['blocking']);
+}, { urls: ['*://*.zoom.us/j/*', '*://*.zoom.us/s/*', '*://*.zoomgov.com/j/*', '*://*.zoomgov.com/s/*'] }, ['blocking']);

@@ -10,7 +10,8 @@
   "permissions": [
     "webRequest",
     "webRequestBlocking",
-    "*://*.zoom.us/*"
+    "*://*.zoom.us/*",
+    "*://*.zoomgov.com/*"
   ],
   "background": {
     "scripts": [
