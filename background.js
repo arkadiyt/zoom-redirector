@@ -1,24 +1,47 @@
-'use strict';
+(function(){
 
-chrome.webRequest.onBeforeRequest.addListener(function(details) {
-  if (details.type !== 'main_frame' || details.method !== 'GET') {
-    return;
-  }
+	'use strict';
 
-  const url = new URL(details.url);
-  const match = /^\/[js]\/(\d+)\/?$/.exec(url.pathname);
-  if (match === undefined || match[1] === undefined) {
-    return;
-  }
+	const handleTabUpdate = function(tabId, changeInfo, tab){
+		if(changeInfo.url){
+			const url = new URL(changeInfo.url);
+			const match = /^\/[js]\/(\d+)\/?$/.exec(url.pathname);
+			if(match === undefined || match[1] === undefined){
+				return;
+			}
+			const mapping = {
+				'j': '/join',
+				's': '/start'
+			};
+			const conferenceType = mapping[match[0].charAt(1)];
+			const conferenceId = encodeURIComponent(match[1]);
+			const conferencePassword = url.searchParams.get('pwd');
+			url.protocol = 'https:';
+			url.pathname = 'wc' + conferenceType + '/' + conferenceId;
+			if(conferencePassword){
+				url.search = '?pwd=' + conferencePassword;
+			}
+			chrome.tabs.update(
+				tabId,
+				{
+					url: url.href
+				}
+			);
+		}
+	};
+	chrome.tabs.onUpdated.addListener(
+		handleTabUpdate,
+		{
+			urls: [
+				'*://*.zoom.us/j/*',
+				'*://*.zoom.us/s/*',
+				'*://*.zoomgov.com/j/*',
+				'*://*.zoomgov.com/s/*'
+			]/*, //supported only from Firefox 88+
+			properties: [
+				'url'
+			]*/
+		}
+	);
 
-  const ending = match[0][1];
-  const mapping = {'j': '/join', 's': '/start'};
-
-  // Save a round trip if the user requested a non-https url
-  // At time of writing, Zoom has non-preloaded HSTS deployed
-  url.protocol = 'https:';
-  url.pathname = '/wc/' + encodeURIComponent(match[1]) + mapping[ending];
-  return {
-    redirectUrl: url.href
-  };
-}, { urls: ['*://*.zoom.us/j/*', '*://*.zoom.us/s/*', '*://*.zoomgov.com/j/*', '*://*.zoomgov.com/s/*'] }, ['blocking']);
+}());
