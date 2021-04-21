@@ -1,6 +1,6 @@
 {
   "name": "__MSG_appName__",
-  "version": "1.0.2",
+  "version": "1.1",
   "description": "__MSG_appDesc__",
   "default_locale": "en",
   "icons": {
@@ -8,8 +8,7 @@
     "128": "img/icon-128x128.png"
   },
   "permissions": [
-    "webRequest",
-    "webRequestBlocking",
+    "tabs",
     "*://*.zoom.us/*",
     "*://*.zoomgov.com/*"
   ],
