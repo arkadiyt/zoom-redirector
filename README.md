@@ -1,5 +1,8 @@
 # zoom-redirector
 
+# Note (3/5/2022):
+#### Zoom has issued a trademark violation against this extension and had Google remove it from the Chrome webstore. I'm working on uploading it under a new name - in the meanwhile I'd love it if you could give me a [retweet](https://twitter.com/arkadiyt/status/1500141960065028098) or quote tweet and tag Zoom - maybe with enough support they'll reverse their decision. Thank you!
+
 ## Table of Contents
 - [What's it for](https://github.com/arkadiyt/zoom-redirector#whats-it-for)
 - [Installation](https://github.com/arkadiyt/zoom-redirector#quick-start)
