@@ -1,10 +1,10 @@
 {
   "appName": {
-    "message": "Zoom Redirector",
+    "message": "Xoom Redirector",
     "description": "The title of the application, displayed in the web store."
   },
   "appDesc": {
-    "message": "Zoom Redirector transparently redirects any meeting links to use Zoom's browser based web client.",
+    "message": "Xoom Redirector transparently redirects any meeting links to use Zoom's browser based web client.",
     "description":"The description of the application, displayed in the web store."
   }
 }
