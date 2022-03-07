@@ -8,16 +8,20 @@
     "128": "img/icon-128x128.png"
   },
   "permissions": [
-    "webRequest",
-    "webRequestBlocking",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
     "*://*.zoom.us/*",
     "*://*.zoomgov.com/*"
   ],
-  "background": {
-    "scripts": [
-      "background.js"
-    ],
-    "persistent": true
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "zoom-redirect",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
   },
-  "manifest_version": 2
+  "manifest_version": 3
 }
