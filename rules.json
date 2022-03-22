@@ -5,11 +5,11 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "regexSubstitution": "https://\\1.zoom.us/wc/\\2/join"
+        "regexSubstitution": "https://\\1zoom.us/wc/\\2/join"
       }
     },
     "condition": {
-      "regexFilter": "^https://([^.]+)\\.zoom\\.us/j/(\\d+)",
+      "regexFilter": "^https://([^.]+\\.)?zoom\\.us/j/(\\d+)",
       "resourceTypes": ["main_frame"]
     }
   },
@@ -19,11 +19,11 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "regexSubstitution": "https://\\1.zoom.us/wc/\\2/start"
+        "regexSubstitution": "https://\\1zoom.us/wc/\\2/start"
       }
     },
     "condition": {
-      "regexFilter": "^https://([^.]+)\\.zoom\\.us/s/(\\d+)",
+      "regexFilter": "^https://([^.]+\\.)?zoom\\.us/s/(\\d+)",
       "resourceTypes": ["main_frame"]
     }
   },
@@ -33,11 +33,11 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "regexSubstitution": "https://\\1.zoomgov.com/wc/\\2/join"
+        "regexSubstitution": "https://\\1zoomgov.com/wc/\\2/join"
       }
     },
     "condition": {
-      "regexFilter": "^https://([^.]+)\\.zoomgov\\.com/j/(\\d+)",
+      "regexFilter": "^https://([^.]+\\.)?zoomgov\\.com/j/(\\d+)",
       "resourceTypes": ["main_frame"]
     }
   },
@@ -47,11 +47,11 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "regexSubstitution": "https://\\1.zoomgov.com/wc/\\2/start"
+        "regexSubstitution": "https://\\1zoomgov.com/wc/\\2/start"
       }
     },
     "condition": {
-      "regexFilter": "^https://([^.]+)\\.zoomgov\\.com/s/(\\d+)",
+      "regexFilter": "^https://([^.]+\\.)?zoomgov\\.com/s/(\\d+)",
       "resourceTypes": ["main_frame"]
     }
   }
