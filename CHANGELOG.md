@@ -1,3 +1,7 @@
+### 1.0.3 (303/26/2022)
+* Republished the extension under the name Xoom Redirector, due to a [trademark violation notice from Zoom](https://twitter.com/arkadiyt/status/1500141960065028098)
+* Updated the extension to use Chrome's v3 manifest format
+
 ### 1.0.2 (03/27/2020)
 * Add support for zoomgov.com ([pmosbach](https://github.com/arkadiyt/zoom-redirector/pull/9))
 
