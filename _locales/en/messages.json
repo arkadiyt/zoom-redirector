@@ -5,6 +5,10 @@
   },
   "appDesc": {
     "message": "Xoom Redirector transparently redirects any meeting links to use Zoom's browser based web client.",
-    "description":"The description of the application, displayed in the web store."
+    "description": "The description of the application, displayed in the web store."
+  },
+  "actionTitle": {
+    "message": "Click to toggle Xoom Redirector",
+    "description": "The tooltip of the extension icon in the browser toolbar"
   }
 }

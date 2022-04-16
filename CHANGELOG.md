@@ -1,4 +1,7 @@
-### 1.0.3 (303/26/2022)
+### 1.0.4 (04/15/2022)
+* Added the ability to toggle the extension by clicking on its icon
+
+### 1.0.3 (03/26/2022)
 * Republished the extension under the name Xoom Redirector, due to a [trademark violation notice from Zoom](https://twitter.com/arkadiyt/status/1500141960065028098)
 * Updated the extension to use Chrome's v3 manifest format
 

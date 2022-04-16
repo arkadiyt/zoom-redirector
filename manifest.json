@@ -1,6 +1,6 @@
 {
   "name": "__MSG_appName__",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "__MSG_appDesc__",
   "default_locale": "en",
   "icons": {
@@ -8,12 +8,19 @@
     "128": "img/icon-128x128.png"
   },
   "permissions": [
-    "declarativeNetRequest"
+    "declarativeNetRequest",
+    "storage"
   ],
   "host_permissions": [
     "*://*.zoom.us/*",
     "*://*.zoomgov.com/*"
   ],
+  "action": {
+    "default_title": "__MSG_actionTitle__"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
   "declarative_net_request": {
     "rule_resources": [
       {
