@@ -1,6 +1,6 @@
 {
   "name": "__MSG_appName__",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "__MSG_appDesc__",
   "default_locale": "en",
   "icons": {
@@ -8,16 +8,27 @@
     "128": "img/icon-128x128.png"
   },
   "permissions": [
-    "webRequest",
-    "webRequestBlocking",
+    "declarativeNetRequest",
+    "storage"
+  ],
+  "host_permissions": [
     "*://*.zoom.us/*",
     "*://*.zoomgov.com/*"
   ],
-  "background": {
-    "scripts": [
-      "background.js"
-    ],
-    "persistent": true
+  "action": {
+    "default_title": "__MSG_actionTitle__"
   },
-  "manifest_version": 2
+  "background": {
+    "service_worker": "background.js"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "zoom-redirect",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "manifest_version": 3
 }
