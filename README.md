@@ -26,4 +26,4 @@ Please see [CHANGELOG.md](https://github.com/arkadiyt/zoom-redirector/blob/maste
 
 ### Getting in touch
 
-Feel free to tweet or direct message me: [@arkadiyt](https://twitter.com/arkadiyt)
+Feel free to contact me on Signal: @arkadiyt.01
